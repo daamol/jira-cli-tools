@@ -15,7 +15,7 @@ if len(sys.argv) == 1:
 project_key = sys.argv[1] if len(sys.argv) > 1 else input("What is the project you want to estimate: ")
 
 issues = jira.search_issues(
-    'project = {} AND Sprint is not EMPTY and "Story points" is EMPTY AND resolution  = Unresolved'.format(project_key)
+    'project = {} AND "Story points" is EMPTY AND resolution  = Unresolved'.format(project_key)
 )
 def add_points(issue, points):
     issue.update(fields={"customfield_10011": points})
