@@ -1,5 +1,12 @@
 # jira-cli-tools
 
+## install
+install python3
+
+install python-jira
+pip3 install jira
+
+Add the folowing to your profile
 ```bash
 export JIRA_PASS="PASS"
 export JIRA_USER="USERNAME"
